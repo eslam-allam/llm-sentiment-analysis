@@ -1244,4 +1244,4 @@ Before submitting, confirm all of the following:
 - [ ] ABSA pipeline runs successfully on the full dataset (Step 3)
 - [ ] Aspect sentiment visualization is complete with title and labels (Step 4)
 - [ ] All five reflection questions are answered in Step 5
-- [ ] Notebook saved and submitted to the course portal
+- [ ] Notebook saved and submitted to Canvas
