@@ -1,0 +1,24 @@
+[workspace]
+authors = ["Eslam Allam <eslamallam73@gmail.com>"]
+channels = ["conda-forge"]
+name = "sentiment-analysis"
+platforms = ["linux-64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
+python = ">=3.14.4,<3.15"
+pandas = ">=3.0.2,<4"
+matplotlib = ">=3.10.9,<4"
+transformers = ">=5.6.2,<6"
+datasets = ">=4.8.4,<5"
+tqdm = ">=4.67.3,<5"
+wordcloud = ">=1.9.6,<2"
+ipykernel = ">=7.2.0,<8"
+ipywidgets = ">=8.1.8,<9"
+
+[pypi-dependencies]
+torch = ">=2.11.0, <3"
+scikit-learn = ">=1.8.0, <2"
+accelerate = ">=1.13.0, <2"
