@@ -87,6 +87,8 @@ The cell below downloads `Llama-3.2-3B-Instruct` (~6 GB) the first time it runs.
 ```python
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
+from huggingface_hub import notebook_login
+notebook_login() # You need to request permission to the meta-llama repo https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct and generate an access token
 
 MODEL_NAME = "meta-llama/Llama-3.2-3B-Instruct"
 
@@ -110,19 +112,10 @@ print(f"\nModel loaded! Parameters: {param_count:,} ({param_count/1e6:.0f}M)")
 
 
 
-    Downloading (incomplete total...): 0.00B [00:00, ?B/s]
-
-
-
-    Fetching 2 files:   0%|          | 0/2 [00:00<?, ?it/s]
-
-
-
     Loading weights:   0%|          | 0/254 [00:00<?, ?it/s]
 
 
-
-    generation_config.json:   0%|          | 0.00/189 [00:00<?, ?B/s]
+    Some parameters are on the meta device because they were offloaded to the cpu.
 
 
     
