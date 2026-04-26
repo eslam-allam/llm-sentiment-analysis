@@ -2,7 +2,7 @@
 authors = ["Eslam Allam <eslamallam73@gmail.com>"]
 channels = ["conda-forge"]
 name = "sentiment-analysis"
-platforms = ["linux-64"]
+platforms = ["linux-64", "win-64", "osx-arm64"]
 version = "0.1.0"
 
 [tasks]
